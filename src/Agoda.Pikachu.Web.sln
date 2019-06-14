@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agoda.Pikachu.Web", "Agoda.Pikachu.Web\Agoda.Pikachu.Web.csproj", "{AE3A3265-5C35-43CA-B220-BF9EB26C4B5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agoda.Pikachu.Api", "Agoda.Pikachu.Api\Agoda.Pikachu.Api.csproj", "{B7563087-9C13-4561-B305-7BB1AB046645}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agoda.Pikachu.Api.UnitTests", "Agoda.Pikachu.Api.UnitTests\Agoda.Pikachu.Api.UnitTests.csproj", "{EA5DB5F7-6BFE-4970-AFE0-7FC7518B4DA5}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{EF767A9F-4B00-4410-AFFF-7B5D84A589F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE3A3265-5C35-43CA-B220-BF9EB26C4B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE3A3265-5C35-43CA-B220-BF9EB26C4B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE3A3265-5C35-43CA-B220-BF9EB26C4B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE3A3265-5C35-43CA-B220-BF9EB26C4B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7563087-9C13-4561-B305-7BB1AB046645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7563087-9C13-4561-B305-7BB1AB046645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7563087-9C13-4561-B305-7BB1AB046645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7563087-9C13-4561-B305-7BB1AB046645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA5DB5F7-6BFE-4970-AFE0-7FC7518B4DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA5DB5F7-6BFE-4970-AFE0-7FC7518B4DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA5DB5F7-6BFE-4970-AFE0-7FC7518B4DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA5DB5F7-6BFE-4970-AFE0-7FC7518B4DA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF767A9F-4B00-4410-AFFF-7B5D84A589F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF767A9F-4B00-4410-AFFF-7B5D84A589F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF767A9F-4B00-4410-AFFF-7B5D84A589F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF767A9F-4B00-4410-AFFF-7B5D84A589F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65E53191-3CD8-4D8C-AC9E-6322D998E00F}
+	EndGlobalSection
+EndGlobal

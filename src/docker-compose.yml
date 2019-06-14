@@ -1,0 +1,33 @@
+version: "3.4"
+
+services:
+  agoda.pikachu.web:
+    image: ${DOCKER_REGISTRY-}agodapikachuweb
+    build:
+      context: .
+      dockerfile: Agoda.Pikachu.Web/Dockerfile
+  db:
+    image: microsoft/mssql-server-linux:latest
+    ports:
+      - "5454:1433"
+    volumes:
+      - /var/opt/mssql
+      # we copy our scripts onto the container
+      - ./SQL:/usr/src/app
+      # bash will be executed from that path, our scripts folder
+    working_dir:
+      /usr/src/app
+      # run the entrypoint.sh that will import the data AND sqlserver
+    command: sh -c "python import_sql.py & /opt/mssql/bin/sqlservr;"
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: Monday1!
+  adp-forwarder:
+    image: reg-hk.agodadev.io/adp-messaging/forwarder
+    volumes: 
+      - adp-logging:/var/log/adp-messaging
+    environment:
+      KAFKA_ENVIRONMENT: QA
+
+volumes: 
+  adp-logging:
